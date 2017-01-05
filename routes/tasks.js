@@ -1,8 +1,8 @@
 var express = require("express");
-var router = express.Router;
+var router = express.Router();
 
 router.get('/tasks',function(req,res,next){
-    res.send('TASKS PAGE');
+    res.send('TAKS APIs');
 });
 
 module.exports = router;

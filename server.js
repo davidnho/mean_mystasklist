@@ -5,12 +5,13 @@ var bodyParser = require("body-parser");
 var index = require("./routes/index");
 var tasks = require("./routes/tasks");
 
-var port = 8080;
-
 var app = express();
 
+var port = 3000;
+
+//view engine
 app.set('views',path.join(__dirname,'views'));
-app.st('view engine', 'ejs');
+app.set('view engine', 'ejs');
 app.engine('html',require("ejs").renderFile);
 
 //set static folder
