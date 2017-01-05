@@ -8,6 +8,7 @@ var tasks = require("./routes/tasks");
 var app = express();
 
 app.set('port', process.env.PORT || 3000 );
+var port = app.get('port');
 
 //view engine
 app.set('views',path.join(__dirname,'views'));
